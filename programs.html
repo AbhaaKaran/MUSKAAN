@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs</title>
+    <style>
+        .container {
+            height: 100px;
+            border-radius: 25px;
+            border: 2px solid black;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            position: relative;
+            background-color: rgba(1, 1, 1, 0.285);
+
+
+
+        }
+
+        .navbar {
+            float: right;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-top: 55px;
+            font-weight: bolder;
+
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        li {
+            float: left;
+
+        }
+
+        li a {
+            display: block;
+            padding: 28px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding-bottom: 3px;
+        }
+
+
+
+        .cover img {
+            height: 450px;
+            width: 100%;
+            padding-top: 10px;
+            border-radius: 20px;
+        }
+
+
+        .program {
+            height: 94px;
+            text-align: center;
+            border-radius: 90px;
+
+
+
+
+        }
+
+        .program h1 {
+            font-size: xx-large;
+            color: rgb(7, 63, 61);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 0px;
+            text-align: center;
+
+        }
+
+        .program p {
+            color: rgb(10, 10, 10);
+            height: 36px;
+            width: 400px;
+            margin-left: 550px;
+            text-align: center;
+
+
+
+        }
+
+        .me {
+            height: 270px;
+            width: 100%;
+            border: 2px solid black;
+            border-bottom-left-radius: 80px;
+            border-bottom-right-radius: 80px;
+            background-color: rgba(17, 79, 79, 0.547);
+            padding-bottom: 20px;
+            margin-bottom: 0px;
+        }
+
+        .iv {
+            padding-top: 170px;
+        }
+
+        .iv h1 {
+            padding-left: 10px;
+
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .iv p {
+            font-size: 1.2rem;
+        }
+        .programs-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    padding: 2rem;
+    border: 8px solid;
+}
+
+.program-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    border: solid;
+    
+
+}
+.program-card img {
+    
+    height: 200px;
+    object-fit: cover;
+   
+    
+    
+}
+
+
+.program-card h2 {
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin: 1rem 0 0.5rem;
+}
+
+.program-card p {
+    padding: 0 1rem;
+    color: #555;
+    font-size: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.5rem 1.5rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+footer{
+            text-align: center;
+            margin-top: 50px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            height: 30px;}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="me">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="img/file.png" alt="logo" height="140" width="500">
+                </div>
+                <div class="program">
+                    <h1>Programs</h1>
+                    <p> "We drive impactful programs focused on education, health, empowerment, and community resilience
+                        to build a brighter, more equitable future for all.".</p>
+
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index1.html" target="_blank"> Home</a></li>
+                        <li> <a href="about.html" target="_blank">About us</a></li>
+                        <li><a href="get-involved.html" target="_blank"> Get Involved</a></li>
+                        <li> <a href="programs.html" target="_blank"> Programs</a></li>
+                        <li><a href="gallery.html" target="_blank">Gallery</a></li>
+                        <li><a href="contact.html" target="_blank">Contact us</a></li>
+                        <li><a href="testimonials.html" target="_blank">Testimonials</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="iv">
+                <center>
+                <h1>Our Programs</h1>
+                <p>Learn more about the initiatives we undertake to bring positive change to the community.</p>
+            </center>
+
+                <section class="programs-section">
+                    <div class="program-card">
+                        <img src="img/program1.jpg" alt="Program 1" width="100%">
+                        <h2>Education for All</h2>
+                        <p>We provide quality education to underprivileged children to give them a brighter future.</p>
+                        <a href="https://www.un.org/en/academic-impact/education-all"  target="_blank"  class="btn">Read More</a>
+                    </div>
+
+                    <div class="program-card">
+                        <img src="img/program3.jpg" alt="Program 2">
+                        <h2>Healthcare Access</h2>
+                        <p>Improving healthcare services for rural and underserved communities.</p>
+                        <a href="https://www.who.int/health-topics/quality-of-care" class="btn">Read More</a>
+                    </div>
+
+                    <div class="program-card">
+                        <img src="img/program2.jpg" alt="Program 3" width="300">
+                        <h2>Women Empowerment</h2>
+                        <p>Empowering women through vocational training and education.</p>
+                        <a href="https://www.unfpa.org/resources/issue-7-women-empowerment" target="_blank" class="btn">Read More</a>
+                    </div>
+
+
+                </section>
+            </div>
+        </main>
+        <footer>
+            &copy 2024 Muskaan
+        </footer>
+</body>
+
+</html>
