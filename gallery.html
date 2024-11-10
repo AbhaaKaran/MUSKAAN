@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        .container {
+            height: 100px;
+            border-radius: 25px;
+            border: 2px solid black;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            position: relative;
+            background-color: rgba(1, 1, 1, 0.285);
+
+
+
+        }
+
+        .navbar {
+            float: right;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-top: 55px;
+            font-weight: bolder;
+
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        li {
+            float: left;
+
+        }
+
+        li a {
+            display: block;
+            padding: 28px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding-bottom: 3px;
+        }
+
+
+
+        .cover img {
+            height: 450px;
+            width: 100%;
+            padding-top: 10px;
+            border-radius: 20px;
+        }
+
+
+        .gallery {
+            height: 94px;
+            text-align: center;
+            border-radius: 90px;
+
+
+
+
+        }
+
+        .gallery h1 {
+            font-size: xx-large;
+            color: rgb(7, 63, 61);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 0px;
+            text-align: center;
+
+        }
+
+        .gallery p {
+            color: rgb(10, 10, 10);
+            height: 36px;
+            width: 400px;
+            font-weight: bolder;
+            margin-left: 550px;
+            text-align: center;
+            font-size: medium;
+
+
+
+        }
+
+        .me {
+            height: 270px;
+            width: 100%;
+            border: 2px solid black;
+            border-bottom-left-radius: 80px;
+            border-bottom-right-radius: 80px;
+            background-color: rgba(17, 79, 79, 0.547);
+            padding-bottom: 20px;
+            margin-bottom: 0px;
+        }
+
+        .iv {
+            padding-top: 170px;
+        }
+
+        .iv h1 {
+            padding-left: 10px;
+
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .iv p {
+            font-size: 1.2rem;
+        }
+
+        .gallery-section {
+            display: grid;
+            gap: 1rem;
+            padding: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 7px solid rgb(88, 76, 76);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        footer{
+            text-align: center;
+            margin-top: 30px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            height: 30px;}
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="me">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="img/file.png" alt="logo" height="140" width="500">
+                </div>
+                <div class="gallery">
+                    <h1>Gallery</h1>
+                    <p> Precious Moments Captured</p>
+
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index1.html" target="_blank"> Home</a></li>
+                        <li> <a href="about.html" target="_blank">About us</a></li>
+                        <li><a href="get-involved.html" target="_blank"> Get Involved</a></li>
+                        <li> <a href="programs.html" target="_blank"> Programs</a></li>
+                        <li><a href="gallery.html" target="_blank">Gallery</a></li>
+                        <li><a href="contact.html" target="_blank">Contact us</a></li>
+                        <li><a href="testimonials.html" target="_blank">Testimonials</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="iv">
+                <center>
+                    <h1>Our Gallery</h1>
+                    <p>Explore moments from our programs and events that capture the spirit of our mission.</p>
+                </center>
+                <section class="gallery-section">
+                    <div class="gallery-item">
+                        <img src="img/1 (1).jpg" alt="Gallery Image 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/2 (1).jpg" alt="Gallery Image 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/3.jpg" alt="Gallery Image 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/4 (1).jpg" alt="Gallery Image 4">
+                    </div>
+                    <div class="gallery-item">
+                        <img src= "img/5 (1).jpg" alt="Gallery Image 5">
+                    </div>
+                    <div class="gallery-item">
+                        <img src= "img/6 (1).jpg" alt="Gallery Image 6">
+                    </div>
+                    <div class="gallery-item">
+                        <img src= "img/7 (1).jpg" alt="Gallery Image 7">
+                    </div>
+                    <div class="gallery-item">
+                        <img src= "img/8.jpg" alt="Gallery Image 8">
+                    </div>
+                    <div class="gallery-item">
+                        <img src= "img/9.jpg" alt="Gallery Image 9">
+                    </div>
+                    <div class="gallery-item">
+                        <img src= "img/10.jpg" alt="Gallery Image 10">
+                    </div>
+                </section>
+            </div>
+        </main>
+         <footer>
+            &copy 2024 Muskaan
+        </footer>
+</body>
+
+</html>
