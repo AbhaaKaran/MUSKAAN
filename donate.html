@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <style>
+        
+        .container {
+            height: 100px;
+            border-radius: 25px;
+            border: 2px solid black;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            position: relative;
+            background-color: rgba(1, 1, 1, 0.285);
+
+
+
+        }
+
+        .navbar {
+            float: right;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-top: 55px;
+            font-weight: bolder;
+
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        li {
+            float: left;
+
+        }
+
+        li a {
+            display: block;
+            padding: 28px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding-bottom: 3px;
+        }
+
+
+
+       
+
+
+       
+
+        .connect p {
+            color: rgb(10, 10, 10);
+            height: 36px;
+            width: 400px;
+            margin-left: 660px;
+            font-weight: bolder;
+
+
+
+        }
+
+        .me {
+            height: 270px;
+            width: 100%;
+            border: 2px solid black;
+            border-bottom-left-radius: 80px;
+            border-bottom-right-radius: 80px;
+            background-color: rgba(17, 79, 79, 0.547);
+            padding-bottom: 10px;
+            margin-bottom: 0px;
+        }
+       #maindiv{
+        background-color:rgba(145, 128, 161, 0.264);
+        width: 60%;
+        border-radius: 15px;
+        border: 2px solid black;
+        margin-top: 190px;
+       }
+       h1{
+        text-align: center;
+        padding-top: 10px;
+       }
+
+        form {
+            padding: 40px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="amount"],
+        select {
+            width: 100%;
+            height: 40px;
+            margin: 2px;
+            border: none;
+        }
+
+        textarea {
+            width: 100%;
+
+        }
+
+        input[type="submit"] {
+            background-color: rgb(192, 76, 76);
+            color: aliceblue;
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 100px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: black;
+            transform: scale(1.05);
+            cursor: pointer;
+
+        }
+
+        .error {
+            color: brown;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        footer{
+            text-align: center;
+            margin-top: 30px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            height: 30px;}
+    </style>
+</head>
+
+<body>
+   
+    <div class="me">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="img/file.png" alt="logo" height="140" width="500">
+                </div>
+                <div class="connect">
+                    <h1>Connect</h1>
+                    <p> Small Acts, Big Impact.
+
+                    </p>
+
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index1.html" target="_blank"> Home</a></li>
+                        <li> <a href="about.html" target="_blank">About us</a></li>
+                        <li><a href="get-involved.html" target="_blank"> Get Involved</a></li>
+                        <li> <a href="programs.html" target="_blank"> Programs</a></li>
+                        <li><a href="gallery.html" target="_blank">Gallery</a></li>
+                        <li><a href="contact.html" target="_blank">Contact us</a></li>
+                        <li><a href="testimonials.html" target="_blank">Testimonials</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <center>
+        <div id="maindiv">
+            <h1>
+                DONATION FORM
+            </h1>
+            <form onsubmit="return(sub())" name="myform">
+                <label for="firstname"> Donor's Name: </label>
+                <input type="text" name ="firstname" id="firstname" placeholder="First Name">
+                <span class="error" id="firstnameerror"></span>
+                <br><br>
+                <label for="email">Email:</label> 
+                <input type="email" name="email" id="email" placeholder="Email">
+                <span class="error" id="emailerror"></span>
+                
+                <br><br>
+                <label for="amount">Donation Amount:
+                    <input type="amount" name="amount" id="amount" placeholder="amount">
+                    <span class="error" id="amounterror"></span>
+                <br><br>
+                <label for="cities">City:</label>
+                <select name="cities" id="cities">
+                    <option value="Select">Select</option>
+                    <option value="noida">Noida</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="mohali">Mohali</option>
+    >            </select> 
+                <span class="error" id="selecterror"></span>
+                <br><br>
+                <label for="method">Payment Method:</label>
+                <select name="method" id="method">
+                    <option value="Select">Select</option>
+                    <option value="credit card">Credit Card
+                    </option>
+                    <option value="paytm">Paytm</option>
+                    <option value="google pay">Google Pay</option>
+    >            </select> 
+                <span class="error" id="selecterror"></span>
+                 <br><br>
+                 <label for="message">Message:</label>
+                 <textarea name="message" id="message" cols="20" rows="5"></textarea>
+                 <span class="error" id="textareaerror"></span>
+    
+                 <br>
+                 <label for="duration">Dontation-type:</label><br>
+                 <input type="radio" value="once" name="duration" id="once">Once
+                 <input type="radio" value="monthly" name="duration" id="monthly">Monthy
+                 <span class="error" id="durationerror"></span>
+                 <br><br>
+                 <input type="submit" value="submit form">
+                 
+                 
+    
+    
+    
+    
+    
+    
+                
+    
+            </form>
+        </div>
+     </center>
+     <script>
+        function sub(){
+            var isvalid= true;
+            if(document.getElementById('firstname').value==""){
+                document.getElementById('firstnameerror').innerText="Can't be empty";
+                isvalid=false;
+            }
+            else{
+                document.getElementById("nameerror").innerText="";
+            }
+            if(document.getElementById('email').value==""){
+                document.getElementById('emailerror').innerText="Can't be empty";
+                isvalid=false;
+            }
+            else{
+                document.getElementById("emailerror").innerText="";
+            }
+            if(document.getElementById('amount').value==""){
+                document.getElementById('amount').innerText="Can't be empty";
+                isvalid=false;
+            }
+            else{
+                document.getElementById("amounterror").innerText="";
+            }
+            if(document.getElementById('cities').value=="Select"){
+                document.getElementById('selecterror').innerText="Can't be empty";
+                isvalid=false;
+            }
+            else{
+                document.getElementById("selecterror").innerText="";
+            }
+            if(document.getElementById('message').value==""){
+                document.getElementById('textareaerror').innerText="Can't be empty";
+                isvalid=false;
+            }
+            else{
+                document.getElementById("textareaerror").innerText="";
+            }
+            if(document.myform.duration.value=""){
+                document.getElementById('durationerror').innerText="Can't be empty";
+                isvalid=false;
+            }
+            else{
+                document.getElementById("durationerror").innerText="";
+            }
+           
+            return isvalid;
+    
+    
+        }
+     </script>
+     <footer>
+    &copy 2024 Muskaan
+</footer>
+
+</body>
+
+</html>
